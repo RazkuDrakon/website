@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Sergio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Home</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">About</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Services</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Sergio Such</h1>
+            <h2>Software Developer</h2>
+            <div class="redes">
+                <a href="https://discordapp.com/users/senka3567" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/sergiosuch/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:sergio.suchpico@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hello, i'm Sergio.</span>I am passionate about technology and video games. My interests have led me to graduate as a software developer and game developer and I always seek to stay up to date with the latest technologies.
+                My strengths are teamwork and the ability to quickly adapt to new circumstances.</p>
+            <p>I'm in constant training to keep myself updated and learn new technologies and methodologies, trying to maintain a pragmatic and solutions-focused approach that allows me to quickly adapt to new challenges.</p>
+
+            <br>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            sergio.suchpico@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.sergiosuch.github.io
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Skills</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-square-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-android"></i>
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-java"></i>
+                            <span>JAVA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-node"></i>
+                            <span>Node</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>NoSQL</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="cv/CV_SergioSuch.pdf" download>
+                <button>
+                    Download CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Services</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Software Development</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>AI</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Videogame Development</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <br>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <strong>sergio.suchpico@gmail.com</strong>
+        <div class="redes">
+            <a href="https://discordapp.com/users/senka3567" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/in/sergiosuch/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:sergio.suchpico@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
