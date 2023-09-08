@@ -55,6 +55,12 @@ html{
     cursor: pointer;
     display: none;
 }
+/* Esto es para eliminar cualquier subrayado de los enlaces */
+.overlay h3, .overlay h3 a {
+    color: white;
+    text-decoration: none; 
+}
+
 /* SECCION I N I C I O */
 .home{
     background: linear-gradient(to top, rgba(41, 47, 51, 0.8), rgb(39, 47, 51)),
