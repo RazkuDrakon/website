@@ -214,7 +214,29 @@ html{
 .about button:hover .overlay{
     width: 100%;
 }
+.certification{
+   font-size: 10px;
+   margin-top: 5px;
+}
+.interes a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
+}
+.interes{
+    text-align: center;
+}
+.interes i, 
+.interes span {
+    display: block;
+}
 
+.es-cv-download-button a,
+.en-cv-download-button a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 /* SECCION PORTFOLIO */
 .services{
     background-color: #252A2E;
