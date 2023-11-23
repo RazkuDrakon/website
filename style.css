@@ -61,6 +61,10 @@ html{
     text-decoration: none; 
 }
 
+#current-work, #current-studies{
+    text-decoration: none;
+    color: inherit;
+  }  
 /* SECCION I N I C I O */
 .home{
     background: linear-gradient(to top, rgba(41, 47, 51, 0.8), rgb(39, 47, 51)),
