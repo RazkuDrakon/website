@@ -405,3 +405,21 @@ footer .arriba{
         width: 100%;
     }
 }
+@media screen and (max-width: 600px) {
+    .about .col {
+        margin-bottom: 20px;
+    }
+}
+
+.email-web-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+    .email-web-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
