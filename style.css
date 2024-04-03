@@ -6,10 +6,8 @@
     padding: 0;
 }
 html{
-    /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
 }
-/* MENU */
 .contenedor-header{
     background: #1e2326;
     position: fixed;
@@ -55,7 +53,6 @@ html{
     cursor: pointer;
     display: none;
 }
-/* Esto es para eliminar cualquier subrayado de los enlaces */
 .overlay h3, .overlay h3 a {
     color: white;
     text-decoration: none; 
@@ -65,7 +62,6 @@ html{
     text-decoration: none;
     color: inherit;
   }  
-/* SECCION I N I C I O */
 .home{
     background: linear-gradient(to top, rgba(41, 47, 51, 0.8), rgb(39, 47, 51)),
     url(img/fondo.jpg);
@@ -241,7 +237,6 @@ html{
     color: inherit;
     display: block;
 }
-/* SECCION PORTFOLIO */
 .services{
     background-color: #252A2E;
     color: #fff;
@@ -336,7 +331,6 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
-/* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
         display: none;
