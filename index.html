@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -71,6 +72,7 @@
                         </a>
                     </button> 
                     -->
+                    <!--
                     <button class="en-cv-download-button">
                         <a href="cv/SergioSuch_Developer_CV.pdf" download target="_blank">
                             Download CV [ENG] <i class="fa-solid fa-download"></i>
@@ -210,6 +212,267 @@
             <a href="https://discordapp.com/users/senka3567" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a href="https://www.linkedin.com/in/sergiosuch/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="mailto:sergio.suchpico@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sergio Such Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Skip link (accesibilidad) -->
+    <a class="skip-link" href="#home" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">
+      Ir al contenido
+    </a>
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#home">Sergio</a>
+            </div>
+
+            <nav id="nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home" onclick="seleccionar()">Home</a></li>
+                    <li><a href="#about" onclick="seleccionar()">About</a></li>
+                    <li><a href="#services" onclick="seleccionar()">Services</a></li>
+                </ul>
+            </nav>
+
+            <!-- botón responsive: atributos ARIA y accesibilidad -->
+            <div class="nav-responsive"
+                 aria-controls="nav"
+                 aria-expanded="false"
+                 role="button"
+                 tabindex="0"
+                 onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="home" class="home">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <!-- Añadidos alt, width/height para evitar reflows; ajustar si tienes versiones más pequeñas -->
+                <img src="img/hero.png" alt="Retrato de Sergio Such" width="400" height="400">
+            </div>
+            <h1>Sergio Such</h1>
+            <h2>Software Developer</h2>
+            <div class="redes">
+                <a href="https://discordapp.com/users/senka3567" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                  <i class="fa-brands fa-discord" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sergiosuch/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:sergio.suchpico@gmail.com" aria-label="Enviar correo">
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hello, I'm Sergio,</span> a Software Developer and Indie Game Developer.</p>
+            <p>I’m a versatile software developer with experience across full-stack, mobile, and game development. I focus on clean code practices, SOLID principles, and accessible app design to deliver maintainable and user-friendly solutions. Skilled in SPA development, RESTful APIs, CI/CD processes, and Agile methodologies. Professional English level and strong team player in multicultural environments.</p>
+            <p>Currently working as a Mobile Developer at <span><a href="https://dual-link.com/en/" id="current-work" target="_blank" rel="noopener noreferrer">Dual Link</a></span>.</p>
+
+            <br>
+            <div class="fila">
+                <div class="col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li class="email-web-text">
+                            <strong>Email</strong>
+                            sergio.suchpico@gmail.com
+                        </li>
+                    <!--
+                        <li class="email-web-text">
+                            <strong>Website</strong>
+                            https://razkudrakon.github.io/website
+                        </li>
+                    </ul>
+                    -->
+                    <!-- TODO: update CV SPA Link
+                    <button class="es-cv-download-button">
+                        <a href="cv/CV_SergioSuch.pdf" download target="_blank" rel="noopener noreferrer">
+                            Download CV [ESP] <i class="fa-solid fa-download"></i>
+                            <span class="overlay"></span>
+                        </a>
+                    </button>
+                    -->
+                    <button class="en-cv-download-button">
+                        <a href="cv/SergioSuch_Developer_CV.pdf"
+                           download
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Download CV [ENG] <i class="fa-solid fa-download" aria-hidden="true"></i>
+                            <span class="overlay"></span>
+                        </a>
+                    </button>
+                </div>
+
+                <div class="col">
+                    <h3>Tech Stack</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-android" aria-hidden="true"></i>
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-react" aria-hidden="true"></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-swift" aria-hidden="true"></i>
+                            <span>Swift</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-java" aria-hidden="true"></i>
+                            <span>JAVA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database" aria-hidden="true"></i>
+                            <span>PL/SQL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows" aria-hidden="true"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="interes">
+                            <a href="https://www.credly.com/badges/06d99da5-97eb-481f-b01f-73fd4d76bd51" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-square-js" aria-hidden="true"></i>
+                                <span>JavaScript</span>
+                                <span class="certification">CERTIFIED</span>
+                            </a>
+                        </div>
+                        <div class="interes">
+                            <a href="https://www.credly.com/badges/3d027087-ad8e-4d1e-9e65-9966632b623a" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-python" aria-hidden="true"></i>
+                                <span>Python</span>
+                                <span class="certification">CERTIFIED</span>
+                            </a>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-unity" aria-hidden="true"></i>
+                            <span>Unity3D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="contenido-seccion">
+            <h2>Software Projects</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/dual-link-logo.png" alt="Dual Link logo" width="600" height="400">
+                    <a href="https://dual-link.com/" target="_blank" rel="noopener noreferrer">
+                        <div class="overlay">
+                            <h3>Dual Link</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/sime-logo.png" alt="Grupo Sime logo" width="600" height="400">
+                    <a href="https://www.sime.es/" target="_blank" rel="noopener noreferrer">
+                        <div class="overlay">
+                            <h3>Grupo Sime</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <h2>Game Projects</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/fiuuum.png" alt="Fiuuum!!! cover" width="600" height="400">
+                    <a href="https://razkudrakon.itch.io/fiuuum" target="_blank" rel="noopener noreferrer">
+                        <div class="overlay">
+                            <h3>Fiuuum!!!</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/samurai.png" alt="The Protective Samurai cover" width="600" height="400">
+                    <a href="https://lporto.itch.io/the-protective-samurai" target="_blank" rel="noopener noreferrer">
+                        <div class="overlay">
+                            <h3>The Protective Samurai</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/twd.jpg" alt="The Wizard's Dungeon cover" width="600" height="400">
+                    <a href="https://razkudrakon.itch.io/the-wizards-dungeon" target="_blank" rel="noopener noreferrer">
+                        <div class="overlay">
+                            <h3>The Wizard's Dungeon</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/bonds.png" alt="Bonds cover" width="600" height="400">
+                    <a href="https://lporto.itch.io/bonds" target="_blank" rel="noopener noreferrer">
+                        <div class="overlay">
+                            <h3>Bonds</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <br>
+        <a href="#home" class="arriba" aria-label="Volver arriba">
+            <i class="fa-solid fa-angles-up" aria-hidden="true"></i>
+        </a>
+        <strong>sergio.suchpico@gmail.com</strong>
+        <div class="redes">
+            <a href="https://discordapp.com/users/senka3567" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                <i class="fa-brands fa-discord" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sergiosuch/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:sergio.suchpico@gmail.com" aria-label="Enviar correo">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
         </div>
     </footer>
 
