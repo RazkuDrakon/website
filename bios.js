@@ -259,12 +259,27 @@ function handleCommand(command) {
   }
 
   if (cmd === "CV") {
+    if (cmd === "CV") {
+  screen.appendChild(
+    document.createTextNode("ACCESSING FILESYSTEM .............. OK\n")
+  );
+  screen.appendChild(
+    document.createTextNode("OPENING /CV/SERGIO_SUCH_CV.PDF ..... OK\n")
+  );
+
+  window.open("cv/EN_Software_Developer_Sergio_Such.pdf", "_blank");
+
+  createPrompt();
+  return;
+}
+
+    /*
     screen.appendChild(
       document.createTextNode("INITIATING CV DOWNLOAD ........ OK\n")
     );
 
     const link = document.createElement("a");
-    link.href = "cv-sergio-such.pdf";
+    link.href = "cv/EN_Software_Developer_Sergio_Such.pdf";
     link.download = "Sergio_Such_CV.pdf";
     document.body.appendChild(link);
     link.click();
@@ -272,6 +287,7 @@ function handleCommand(command) {
 
     createPrompt();
     return;
+    */
   }
 
   if (sections[cmd]) {
